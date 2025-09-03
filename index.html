@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conteudos Extras</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/LOGO.png" alt="Logo">
+    </div>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="hamburger-menu">
+      <ul class="menu-items">
+        <li><a href="../NEWS/index.html">NOTICIAS</a></li>
+        <li><a href="../ELEMENTS/index.html">ELEMENTOS</a></li>
+        <li><a href="../REACTIONS/index.html">REACOES</a></li>
+        <li><a href="../TIMELINE/index.html">TIME-LINE</a></li>
+        <li><a href="../HOME/index.html">HOME</a></li>
+        <li><a href="../EXTRAS/index.html">EXTRAS</a></li>
+        <li><a href="../PLANETS/mercurio.html">PLANETS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container">
+      <div class="navbar-image-continuation">
+        <div class="hero-text">
+
+          <h1 class="hero-main-title">Conteudos Extras</h1>
+
+          <p class="hero-desc">
+            Aqui você encontra vídeos, sites e curiosidades para <br> explorar ainda mais o universo.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  <section class="video-section container">
+      <div class="section-header">
+        <h2 class="section-title">Videos</h2>
+        <div class="underline"></div>
+      </div>
+  <div class="video-card">
+
+    <!-- Lado esquerdo: quadro cinza com símbolo de play -->
+    <div class="video-preview">
+      <div class="play-button">&#9658;</div>
+    </div>
+
+    <!-- Lado direito: título, tópicos e botão -->
+    <div class="video-content">
+      <h2 class="video-title">
+        Título do Vídeo Quebrando Linha no Meio
+      </h2>
+
+      <ul class="video-topics">
+        <li>Tópico 1</li>
+        <li>Tópico 2</li>
+        <li>Tópico 3</li>
+      </ul>
+
+      <a href="link" target="_blank" class="video-link">
+        Link
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+        menuToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          hamburgerMenu.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!hamburgerMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            hamburgerMenu.classList.remove('open');
+          }
+        });
+
+        const backToTop = document.querySelector('.back-to-top');
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    </script>
+
+</body>
+
+</html>
