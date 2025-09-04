@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: 'Juana-extra';
-  src: url('./font/Fontspring-DEMO-juana-extralightit.otf') format('truetype');
+  font-family: "Juana-extra";
+  src: url("./font/Fontspring-DEMO-juana-extralightit.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 90px 10px 40px;
-  background-image: url('../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png');
+  background-image: url("../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 
 .navbar-image-continuation {
   height: 190px;
-  background-image: url('../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png');
+  background-image: url("../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
   top: 100%;
   right: 90px;
   width: 220px;
-  background: rgba(0,0,0,0.95);
+  background: rgba(0, 0, 0, 0.95);
   border-radius: 8px;
   padding: 10px 0;
   opacity: 0;
@@ -103,7 +103,7 @@
 }
 
 .hamburger-menu li {
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hamburger-menu li:last-child {
@@ -120,12 +120,12 @@
 }
 
 .hamburger-menu a:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .hero-main-title {
   padding-top: 70px;
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 280;
   font-style: normal;
   font-size: 70px;
@@ -138,108 +138,169 @@
 }
 
 .hero-desc {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 22px;
   line-height: 29px;
   letter-spacing: 0%;
   color: #ffffff;
-  width: 60%;               /* largura do bloco */
-  margin: 20px auto 0;      /* centraliza horizontalmente */
-  text-align: justify;       /* justifica o texto */
-  display: block;            /* necessário para o margin auto funcionar */
-  text-align-last: center;   /* opcional: centraliza a última linha do bloco */
+  width: 60%;
+  margin: 20px auto 0;
+  text-align: justify;
+  display: block;
+  text-align-last: center;
 }
 
 body {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #333;
-  background-color: #E6D6B8;
+  background-color: #e6d6b8;
 }
 
-/* Siteeeeeeeeeeeee */
+/* Seção de Vídeos */
 
 .video-section {
   padding: 80px 20px;
-  padding-bottom: 120px;
 }
 
 .video-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
-  max-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
   width: 100%;
+  flex-direction: row;
+  min-height: 404px;
+}
+
+.video-card-reverse {
+  flex-direction: row-reverse;
 }
 
 .video-preview {
-  width: 705px;
-  height: 515px;
-  background-color: #4B4845;
-  border-radius: 8px;
+  width: 504px;
+  height: 404px;
+  background-color: #807c76;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* evita que o quadrado encolha no flex */
+  flex-shrink: 0;
+  position: relative;
 }
 
 .play-button {
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .video-content {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 404px;
+  position: relative;
 }
 
 .video-title {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 280;
-  font-size: 64px;
-  color: #333;
+  font-size: 54px;
+  line-height: 1.0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #4b4845;
+}
+
+.p-title {
+  font-size: 15px;
+  font-family: "Juana-extra", sans-serif;
+  color: #4b4845;
+  margin-bottom: 20px;
+}
+
+.video-desc {
+  font-family: "Juana-extra", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #4b4845;
+  margin-bottom: 15px;
 }
 
 .video-topics {
   list-style: disc;
   padding-left: 20px;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'Juana-extra', sans-serif;
+  margin-bottom: 25px;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4b4845;
+}
+
+.video-topics li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
   line-height: 28px;
 }
 
+.video-topics li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .video-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #807C76;
+  display: block;
+  width: 118px;
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  background-color: #807c76;
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  font-family: 'Juana-extra', sans-serif;
+  border-radius: 4px;
+  font-family: "Juana-extra", sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  transition: background 0.3s ease;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.video-link:hover {
-  background-color: #665f59;
-}
-
+/* Outras seções (mysteries, theories, cards, etc) */
 
 .mysteries-section {
   padding: 80px 40px;
   display: flex;
   justify-content: center;
-  background-color: #E6D6B8;
+  background-color: #e6d6b8;
 }
 
 .section-content {
@@ -255,7 +316,7 @@ body {
 }
 
 .section-title {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 280;
   font-size: 48px;
   line-height: 56px;
@@ -264,7 +325,7 @@ body {
 }
 
 .section-desc {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 36px;
@@ -283,25 +344,25 @@ body {
   width: 441px;
   height: 250px;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .rect-top {
-  background-color: #807C76;
+  background-color: #807c76;
   top: -120px;
   left: 150px;
   z-index: 1;
 }
 
 .rect-middle {
-  background-color: #4B4845;
+  background-color: #4b4845;
   top: 10px;
   left: 40px;
   z-index: 2;
 }
 
 .rect-bottom {
-  background-color: #807C76;
+  background-color: #807c76;
   top: 180px;
   left: 150px;
   z-index: 3;
@@ -321,9 +382,8 @@ body {
 }
 
 .theories-section {
-  padding: 80px 40px;
-  background-color: #E6D6B8;
-  padding-bottom: 120px;
+  padding: 80px 40px 120px 40px;
+  background-color: #e6d6b8;
 }
 
 .section-header {
@@ -334,7 +394,7 @@ body {
 }
 
 .section-title {
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-weight: 280;
   font-size: 64px;
   color: #333;
@@ -359,7 +419,7 @@ body {
   max-width: 327px;
   min-width: 300px;
   height: 400px;
-  background-color: #4B4845;
+  background-color: #4b4845;
   position: relative;
   overflow: visible;
 }
@@ -385,40 +445,46 @@ body {
   border-radius: 4px;
 }
 
-.card-overlay h1{
+.card-overlay h1 {
   padding-top: 20px;
   text-align: center;
 }
 
-.card-overlay p{
+.card-overlay p {
   text-align: center;
   padding-top: 40px;
   justify-content: center;
 }
 
 .botaowikipedia {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #807C76; 
+  display: block; /* muda de flex para block */
+  width: 198px;
+  height: 73px;
+  line-height: 73px; /* centraliza verticalmente o texto */
+  text-align: center; /* centraliza horizontalmente */
+
+  position: absolute;
+  top: 1133px;
+  left: 883px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  background-color: #807c767e;
   color: #fff;
-  font-family: 'Juana-extra', sans-serif;
+  font-family: "Juana-extra", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  transition: background 0.3s ease;
-  position: absolute;
-  bottom: 20px;  
-  left: 20px; 
-}
 
-.botaowikipedia {
-  background-color: #807c767e;
+  padding: 0;
+  box-sizing: border-box;
+
+  white-space: nowrap; /* impede quebrar linha */
+  overflow: hidden; /* corta excesso de texto */
+  text-overflow: ellipsis; /* mostra "..." se passar */
 }
 
 .misterios-section {
-  padding: 80px 40px;
-  background-color: #E6D6B8;  
-  padding-bottom: 220px; 
+  padding: 80px 40px 220px 40px;
+  background-color: #e6d6b8;
 }
