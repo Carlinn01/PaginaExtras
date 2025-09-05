@@ -161,8 +161,6 @@ body {
   background-color: #e6d6b8;
 }
 
-/* Seção de Vídeos */
-
 .video-section {
   padding: 80px 20px;
 }
@@ -194,19 +192,17 @@ body {
 }
 
 .play-button {
-  /* Updated to use background image instead of text symbol */
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(/img/1.png);
+  background-image: url(/img/Group\ 76.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  display: none; /* Removed play button from center of video card */
 }
 
 .video-content {
@@ -275,7 +271,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  top: 4px; /* Replaced bullet point with background image */
+  top: 4px;
 }
 
 .video-link {
@@ -299,8 +295,6 @@ body {
   bottom: 0;
   left: 0;
 }
-
-/* Outras seções (mysteries, livros, cards, etc) */
 
 .mysteries-section {
   padding: 80px 40px;
@@ -388,118 +382,6 @@ body {
 }
 
 .livros-section {
-  padding: 80px 40px 120px 40px;
-  background-color: #e6d6b8;
-}
-
-.section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 60px;
-}
-
-.section-title {
-  font-family: "Juana-extra", sans-serif;
-  font-weight: 280;
-  font-size: 64px;
-  color: #333;
-}
-
-.underline {
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-  margin-top: 10px;
-}
-
-.cards-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-.card {
-  flex: 1 1 0;
-  max-width: 327px;
-  min-width: 300px;
-  height: 400px;
-  background-color: #4b4845;
-  position: relative;
-  overflow: visible;
-}
-
-.card-img {
-  width: 290px;
-  height: 173px;
-  display: block;
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  object-fit: contain;
-}
-
-.card-overlay {
-  width: 260px;
-  height: 260px;
-  background-color: #fff;
-  position: absolute;
-  top: 280px;
-  left: 35px;
-  border-radius: 4px;
-}
-
-.card-overlay h1 {
-  padding-top: 20px;
-  text-align: center;
-}
-
-.card-overlay p {
-  text-align: center;
-  padding-top: 40px;
-  justify-content: center;
-}
-
-.botaowikipedia {
-  display: block; /* muda de flex para block */
-  width: 198px;
-  height: 73px;
-  line-height: 73px; /* centraliza verticalmente o texto */
-  text-align: center; /* centraliza horizontalmente */
-
-  position: absolute;
-  top: 1133px;
-  left: 883px;
-  transform: rotate(0deg);
-  opacity: 1;
-
-  background-color: #807c767e;
-  color: #fff;
-  font-family: "Juana-extra", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-
-  padding: 0;
-  box-sizing: border-box;
-
-  white-space: nowrap; /* impede quebrar linha */
-  overflow: hidden; /* corta excesso de texto */
-  text-overflow: ellipsis; /* mostra "..." se passar */
-}
-
-.misterios-section {
-  padding: 80px 40px 220px 40px;
-  background-color: #e6d6b8;
-}
-
-
-
-/* seção 2 */
-
-.livros-section {
   padding: 0px 40px;
   background-color: #E6D6B8;
   padding-bottom: 120px;
@@ -542,7 +424,6 @@ body {
   position: relative;
   overflow: visible;
 }
-
 
 .card-overlay {
   width: 290px;
@@ -614,7 +495,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  top: 4px; /* Replaced bullet point with background image */
+  top: 4px;
 }
 
 .livros-link {
@@ -639,9 +520,6 @@ body {
   left: 5%;
 }
 
-
-
-/* Sites */
 .sites-section {
   padding: 80px 40px;
   background-color: #e6d6b8;
@@ -650,7 +528,7 @@ body {
 .sites-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 20px; /* espaço entre os cards */
+  gap: 20px 20px;
   justify-content: center;
 }
 
@@ -660,13 +538,13 @@ body {
   align-items: center;
   width: 30%;
   min-width: 250px; 
-  max-width: 350px; /* controla largura máxima */
-  margin-bottom: 40px; /* espaço entre linhas */
+  max-width: 350px;
+  margin-bottom: 40px;
 }
 
 .site-card {
-  width: 100%; /* ocupa toda a largura do wrapper */
-  height: 300px; /* altura menor para caber bem */
+  width: 100%;
+  height: 300px;
   background-color: #807c76;
   border-radius: 8px;
   display: flex;
@@ -674,7 +552,6 @@ body {
   align-items: center;
   position: relative;
 }
-
 
 .site-button {
   display: inline-block;
@@ -699,8 +576,8 @@ body {
   font-size: 40px;
   color: #333;
   margin-top: 15px;
-  width: 100%;       /* ocupa toda a largura do wrapper */
-  text-align: left;  /* alinha o texto à esquerda */
+  width: 100%;
+  text-align: left;
 }
 
 .site-card-wrapper p {
@@ -710,4 +587,26 @@ body {
   line-height: 24px;
   text-align: justify;
   max-inline-size: 80%;
+}
+
+.back-to-top {
+  display: block;
+  width: 300px;
+  margin: 40px auto 60px auto;
+  padding: 15px;
+  background-color: #4B4845;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+
+.back-to-top:hover {
+  background-color: #444;
 }
